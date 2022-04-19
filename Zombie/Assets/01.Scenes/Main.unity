@@ -859,6 +859,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e60b325a019543cbb2e3920522a2e6b, type: 3}
+--- !u!198 &1321692703 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198000010131513902, guid: 8e60b325a019543cbb2e3920522a2e6b, type: 3}
+  m_PrefabInstance: {fileID: 1321692702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1333064429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1118,6 +1123,24 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &1333064434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333064431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d2d59f22c23b944ace0afd3d065009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireTransform: {fileID: 0}
+  muzzleFlashEffect: {fileID: 1385283261}
+  shellEjectEffect: {fileID: 1321692703}
+  gunData: {fileID: 0}
+  ammoRemain: 100
+  magAmmo: 0
 --- !u!1001 &1385283260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1179,6 +1202,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74d744994bc414c37bfda957f1d57118, type: 3}
+--- !u!198 &1385283261 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198000012944515248, guid: 74d744994bc414c37bfda957f1d57118, type: 3}
+  m_PrefabInstance: {fileID: 1385283260}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1636793757
 PrefabInstance:
   m_ObjectHideFlags: 0
