@@ -10,7 +10,7 @@ public class PlayerInput : MonoBehaviour
     public string moveAxisName = "Vertical";        // 앞뒤 움직임을 위한 입력축
     public string rotateAxisName = "Horizontal";    // 좌우 회전을 위한 입력축 이름
     public string fireButtonName = "Fire1";         // 발사를 위한 입력 버튼 이름
-    public string reloadButtonNAme = "Reload";      // 재장전을 위한 입력 버튼 이름
+    public string reloadButtonName = "Reload";      // 재장전을 위한 입력 버튼 이름
     
 
     // 프로퍼티 : 값 할당은 내부에서만 가능
@@ -39,7 +39,7 @@ public class PlayerInput : MonoBehaviour
         // fire에 관한 입력 감지
         fire = Input.GetButton(fireButtonName);
         // reload에 관한 입력 감지
-        reload = Input.GetButtonDown(reloadButtonNAme);
+        reload = Input.GetButtonDown(reloadButtonName);
 
     }
 }
