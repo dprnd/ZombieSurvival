@@ -5,7 +5,7 @@ using UnityEngine;
 // 체력, 대미지 받아들이기, 사망 기능, 사망 이벤트를 제공
 public class LivingEntity : MonoBehaviour, IDamageable
 {
-    public float startinHealth = 100f;      // 시작 체력
+    public float startingHealth = 100f;      // 시작 체력
     public float health {get; protected set;}       // 현재 체력
     public bool dead {get; protected set;}      // 사망 상태
     public event Action onDeath;        // 사망 시 발동할 이벤트 (event와 Action은 다름)
@@ -16,7 +16,7 @@ public class LivingEntity : MonoBehaviour, IDamageable
         // 사망하지 않은 상태로 시작
         dead = false;
         // 체력을 시작 체력으로 초기화
-        health = startinHealth;
+        health = startingHealth;
     }
     
     // 대미지를 입는 기능
