@@ -8,7 +8,7 @@ public class Zombie : LivingEntity
     public LayerMask whatIsTarget;      // 추적 대상 레이어
 
     private LivingEntity targetEntity;       // 추적 대상
-    private NavMeshAgent navMeshAgent;       // 경로 계산 AI 에이전트
+    public NavMeshAgent navMeshAgent;       // 경로 계산 AI 에이전트
 
     public ParticleSystem hitEffect;       // 피격 시 재생할 파티클 효과
     public AudioClip deathSound;       // 사망 시 재생할 소리
@@ -60,6 +60,8 @@ public class Zombie : LivingEntity
         // 공격력 설정
         damage = zombieData.damage;
         // 내비메시 에이전트의 이동 속도 설정
+        //navMeshAgent.speed = zombieData.speed;
+
         navMeshAgent.speed = zombieData.speed;
         // 렌더러가 사용 중인 머티리얼의 컬러를 변경, 외형 색이 변함
         zombieRenderer.material.color = zombieData.skinColor;
